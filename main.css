@@ -9,9 +9,17 @@ body{
   background-repeat: no-repeat;
   color:white;
 }
-h1{
+h1,.name{
   padding-top:2rem;
   font-family: 'Lobster Two', cursive;
+}
+
+.navbar{
+  display: flex;
+}
+.name{
+  padding: 0;
+  margin-left: 10px;
 }
 .cont{
   display: flex;
@@ -20,6 +28,7 @@ h1{
   align-items: center;
 
 }
+
 .icons{
   color:white;
 }
@@ -31,14 +40,14 @@ button{
   visibility: hidden;
 }
 button:focus{
-  color: #3700B3;
+  color: #bb86fc;
 }
 .card{
   border: 2px solid white;
-  margin-top: 10vh;
+  margin-top: 5vh;
   border-radius: 20px;
   /* background-color: rgba(0, 0, 255, 0.2); */
-  background-color: #121212;
+  background-color: rgba(18, 18, 18, 1);
   backdrop-filter: blur(5px);
   height: auto;
   padding-bottom: 3rem;

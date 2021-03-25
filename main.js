@@ -13,3 +13,7 @@ else{
       obj.play();
   });
 }
+
+function land(){
+  $("#landing").css("visibility","hidden");
+}

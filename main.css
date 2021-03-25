@@ -2,13 +2,29 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 25vh;
-
+  background-clip: content-box;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/2.jpg");
 }
+
 .card{
   border-radius: 20px;
-  
+  background-color:rgba(0, 0, 233, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
 }
 
+label{
+  padding-top: .5rem;
+  font-size: 1rem;
+}
+.card-header{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+}
 .makecenter{
   display: flex;
   justify-content: center;
@@ -25,6 +41,7 @@ input[type=range] {
   height: 19px;
   -webkit-appearance: none;
   margin: 10px 0;
+  background-color: transparent;
   width: 100%;
 }
 input[type=range]:focus {
@@ -34,6 +51,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 1px;
   cursor: pointer;
+  background-color: transparent;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
   background: #2497E3;

@@ -1,21 +1,15 @@
-function soundAlarm(){
-        let amount = 1;
-        let audio = new Audio("Audio/1.mp3");
 
-        function playAudio() {
-			audio.volume = 0.3;
-            audio.pause();
-            audio.currentTime = 0;
-            audio.play();
-        }
-        for(let i =0 ;i<amount;i++){
+let obj = document.createElement("audio");
+    obj.src = "Audio/1.mp3";
 
-            setTimeout(playAudio,800*i)
-        }
 
+if($('.selected').checked){
+  $('.selected').on('click', function () {
+      obj.pause();
+  });
 }
-
-
-if($(".selected").focus()){
-  soundAlarm();
+else{
+  $('.selected').on('click', function () {
+      obj.play();
+  });
 }
